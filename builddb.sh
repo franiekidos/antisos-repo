@@ -7,7 +7,8 @@
 set -euo pipefail
 #just building the db
 cd x86_64
-rm -rf antisos*
+rm -rf *.db
+rm -rf *.files
 repo-add -s -n -R antisos.db.tar.gz *.pkg.tar.zst
 rm antisos.db
 rm antisos.db.sig
